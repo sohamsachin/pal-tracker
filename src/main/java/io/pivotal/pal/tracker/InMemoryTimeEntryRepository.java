@@ -47,8 +47,8 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository{
     }
 
     @Override
-    public TimeEntry delete(long timeEntryId) {
-        return timeEntries.remove(timeEntryId);
+    public void delete(long timeEntryId) {
+         timeEntries.remove(timeEntryId);
     }
 
     @Override
